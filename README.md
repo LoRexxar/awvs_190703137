@@ -20,10 +20,15 @@ docker exec -it -u root wvs07 /bin/bash
 ```
 
 
-    登录awvs平台: http://vpsip:51443/
+    登录awvs平台: https://vpsip:51443/
 
     账号密码:
     admin@test.com
     Test123...
 
     awvs api调用: awvs_api.py
+
+
+按照github dockerfile编译是可以扫描的，从测试情况来看，以下问题不影响扫描():
+- ubuntu systemctl: command not found
+- 执行path出现: Patching failed,error: Sig not found.
